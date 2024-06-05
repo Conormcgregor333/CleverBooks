@@ -1,0 +1,488 @@
+@import "_base";
+.navouter {
+  /* -----------------------------------Product------------------------------------------------------------------------- */
+  .product {
+    display: none;
+    @include max-width(1380px) {
+      display: none;
+    }
+    width: 100%;
+    height: 27rem;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    background-color: white;
+
+    .producthead {
+      display: flex;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      img {
+        height: 2rem;
+        width: 2rem;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 0.3rem;
+        margin-left: 0.5rem;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+    .linebreak {
+      width: 97%;
+      margin-inline: auto;
+      height: 0.1rem;
+      background-color: rgb(170, 164, 164);
+      margin-top: 2rem;
+    }
+    .productnames {
+      margin-top: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      width: 97%;
+      margin-inline: auto;
+      .productname {
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+
+        .new {
+          color: rgb(244, 154, 244);
+          font-family: "Dancing Script", cursive;
+          margin-left: 1rem;
+        }
+        width: 21rem;
+        height: 8rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+
+        border-radius: 1rem;
+        img {
+          height: 2rem;
+          width: 2rem;
+        }
+        p {
+          margin-left: 3rem;
+          text-align: justify;
+          margin-top: 1rem;
+          width: 80%;
+        }
+        div {
+          display: flex;
+          margin-top: 0.5rem;
+          img {
+            margin-right: 1rem;
+            margin-left: 1rem;
+          }
+          h3 {
+            margin-top: 0.3rem;
+          }
+        }
+      }
+      .productname:hover {
+        background-color: rgb(225, 225, 225);
+        transition: 0.2s;
+      }
+    }
+  }
+  /* -----------------------------------------------------------Industries------------------------------------------------------- */
+  .industries {
+    display: none;
+    position: absolute;
+    left: 43rem;
+    width: 20rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: 1rem;
+    .industry {
+      display: flex;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      height: 4rem;
+      padding-inline: 0.3rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      p {
+        font-size: 1.3rem;
+        font-family: "Roboto", sans-serif;
+        margin-top: 0.5rem;
+      }
+      img {
+        width: 2rem;
+        height: 2ren;
+        margin-right: 1rem;
+      }
+    }
+    .industry:hover {
+      background-color: rgb(225, 225, 225);
+      transition: 0.2s;
+    }
+  }
+  /* -------------------------------------------------------------------------------------------------------------------------- */
+
+  height: 50rem;
+  @include max-width(1380px) {
+    height: 80rem;
+  }
+  @include max-width(990px) {
+    height: 90rem;
+  }
+  border: 2px solid black;
+  background: linear-gradient(to top, rgb(99, 3, 99), black),
+    linear-gradient(to left, rgb(99, 3, 99), black);
+  background-blend-mode: overlay;
+  position: relative;
+  border-radius: 0 0 15rem 7rem;
+
+  .hamexpand {
+    display: none;
+    font-family: "Roboto", sans-serif;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    div {
+      margin-top: 1rem;
+    }
+    .log {
+      text-decoration: none;
+      color: rgb(251, 85, 251);
+      cursor: pointer;
+    }
+    .talkTo {
+      height: 4rem;
+      width: 10rem;
+      border-radius: 2rem;
+      color: white;
+      text-align: center;
+      padding-top: 1rem;
+      font-size: 1.5rem;
+      font-family: "Roboto", sans-serif;
+      background-image: linear-gradient(
+        to left,
+        rgb(243, 90, 90),
+        rgb(103, 103, 241)
+      );
+    }
+    position: absolute;
+    width: 100%;
+    height: 22rem;
+    top: 7rem;
+    left: 0;
+    background-color: white;
+    z-index: 1000000;
+  }
+}
+.nav {
+  .hamburger {
+    display: none;
+    margin-top: 2.8rem;
+    margin-left: 1rem;
+    .ham1 {
+      background-color: white;
+      height: 0.2rem;
+      width: 1rem;
+    }
+    .ham2 {
+      background-color: white;
+      height: 0.2rem;
+      width: 2rem;
+      margin-top: 0.5rem;
+    }
+    .ham3 {
+      background-color: white;
+      height: 0.2rem;
+      width: 1rem;
+      margin-top: 0.5rem;
+      margin-left: 1rem;
+    }
+
+    @include max-width(1380px) {
+      display: block;
+    }
+    @include max-width(420px) {
+      margin-top: 1rem;
+    }
+  }
+  .makeCross {
+    .ham1 {
+      transform: translateX(0.2rem) translateY(0.3rem) rotateZ(45deg);
+      transition: 0.2s;
+    }
+    .ham2 {
+      transform: rotateZ(-45deg);
+      transition: 0.2s;
+    }
+    .ham3 {
+      transform: translateY(-0.3rem) rotateZ(45deg);
+      transition: 0.2s;
+    }
+  }
+  background-color: black;
+
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 4rem;
+  @include max-width(420px) {
+    padding-inline: 1rem;
+  }
+  position: sticky;
+  top: 0;
+}
+.nav1 {
+  background-image: linear-gradient(
+    to left,
+    rgb(243, 90, 90),
+    rgb(103, 103, 241)
+  );
+  background-clip: text;
+  @include max-width(380px) {
+    margin-inline: auto;
+  }
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: transparent;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  @include max-width(420px) {
+    font-size: 2rem;
+  }
+}
+.nav2 {
+  display: flex;
+  @include max-width(1380px) {
+    display: none;
+  }
+  div {
+    margin-inline: 2rem;
+    cursor: pointer;
+  }
+
+  div:hover {
+    color: orange;
+  }
+  color: white;
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+}
+.nav3 {
+  display: flex;
+  @include max-width(1380px) {
+    display: none;
+  }
+  margin-top: 2rem;
+  justify-content: space-between;
+  .talk {
+    cursor: pointer;
+    height: 4rem;
+    width: 10rem;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(
+      to left,
+      rgb(243, 90, 90),
+      rgb(103, 103, 241)
+    );
+  }
+  .talk:hover {
+    transform: scale(0.9);
+    transition: 0.3s;
+  }
+  .login {
+    background-image: linear-gradient(
+      to left,
+      rgb(243, 90, 90),
+      rgb(103, 103, 241)
+    );
+    background-clip: text;
+    margin-top: 1.2rem;
+    margin-right: 3rem;
+  }
+  a {
+    color: transparent;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+.hero-section {
+  display: flex;
+  @include max-width(1380px) {
+    display: block;
+    .hero-img {
+      display: block;
+      margin-inline: auto;
+      margin-top: 2rem;
+    }
+  }
+  @include max-width(600px) {
+    .hero-img {
+      height: 20rem;
+      width: 80%;
+    }
+  }
+}
+.hero {
+  .title {
+    color: white;
+    font-size: 5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    background-image: linear-gradient(
+      to left,
+      rgb(243, 90, 90),
+      rgb(103, 103, 241)
+    );
+    background-clip: text;
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 4.5rem;
+    span {
+      color: transparent;
+    }
+  }
+  .about {
+    color: white;
+    width: 70%;
+    text-align: justify;
+    margin-left: 4.5rem;
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+    margin-top: 2rem;
+    @include max-width(380px) {
+      margin-inline: auto;
+    }
+  }
+  .btn-img {
+    display: flex;
+
+    margin-left: 4.5rem;
+    margin-top: 2rem;
+    .txt-img {
+      height: 9rem;
+      width: 19rem;
+      margin-left: 1rem;
+      transform: translateY(2.5rem);
+      @include max-width(990px) {
+        display: none;
+      }
+    }
+    .outer {
+      @include max-width(375px) {
+        margin-right: 2rem;
+        height: 4rem;
+      }
+      margin-top: 2rem;
+      position: relative;
+      width: 18.2rem;
+      height: 3.8rem;
+      border-radius: 1.9rem;
+      cursor: pointer;
+      background-image: linear-gradient(
+        to left,
+        rgb(243, 90, 90),
+        rgb(103, 103, 241)
+      );
+
+      /* text-align: center; */
+      p {
+        color: white;
+        font-size: 1.3rem;
+        text-align: center;
+        padding-top: 1.1rem;
+        font-family: "Roboto", sans-serif;
+        @include max-width(375px) {
+          padding-top: 0.5rem;
+        }
+      }
+    }
+    .inner {
+      display: none;
+
+      position: absolute;
+
+      top: 0.1rem;
+      left: 0.1rem;
+      width: 18rem;
+      height: 3.6rem;
+      border-radius: 1.75rem;
+      background-color: white;
+
+      .txt-cont {
+        background-image: linear-gradient(
+          to left,
+          rgb(249, 49, 49),
+          rgb(64, 64, 248)
+        );
+        background-clip: text;
+      }
+      .txt {
+        font-size: 1.3rem;
+        text-align: center;
+        color: transparent;
+        padding-top: 1.1rem;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+    .outer:hover {
+      .inner {
+        display: block;
+        animation: zoom;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        transition-timing-function: ease-in-out;
+      }
+    }
+
+    @keyframes zoom {
+      0% {
+        transform: scale(0.1);
+      }
+      20% {
+        transform: scale(0.2);
+      }
+      30% {
+        transform: scale(0.3);
+      }
+      40% {
+        transform: scale(0.4);
+      }
+      50% {
+        transform: scale(0.5);
+      }
+      60% {
+        transform: scale(0.6);
+      }
+      70% {
+        transform: scale(0.7);
+      }
+      80% {
+        transform: scale(0.8);
+      }
+      90% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+//below-1380px hamburger and hero-img
+//below 990px height increase and txt-img none
+//below 380px hero-btn,hero-para and hero-head  margin-inline auto

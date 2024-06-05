@@ -1,0 +1,160 @@
+@import "_base";
+.review {
+  margin-top: 2rem;
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  @include max-width(1200px) {
+    display: block;
+  }
+  .main-txt {
+    .para {
+      width: 95%;
+      margin-inline: auto;
+      text-align: justify;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      color: rgb(113, 112, 112);
+      @include max-width(1200px) {
+        display: none;
+      }
+    }
+    .profileANDlogo {
+      display: flex;
+      width: 95%;
+      margin-inline: auto;
+      justify-content: space-between;
+      @include max-width(680px) {
+        justify-content: center;
+        align-items: center;
+      }
+      .profile-info {
+        display: flex;
+        margin-top: 6rem;
+        /* margin-right: 50%; */
+
+        @include max-width(1200px) {
+          margin-right: 0;
+        }
+
+        .profile-pic {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 2.5rem;
+        }
+
+        .profile-txt {
+          .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            font-family: "Roboto", sans-serif;
+            @include max-width(720px) {
+              font-size: 1.1rem;
+            }
+          }
+          .desig {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 1rem;
+            color: rgb(169, 167, 167);
+            font-family: "Roboto", sans-serif;
+            @include max-width(720px) {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+      .logo {
+        width: 15rem;
+        height: 15rem;
+        @include max-width(680px) {
+          display: none;
+        }
+      }
+    }
+    .btns {
+      margin-top: 2rem;
+      @include max-width(1200px) {
+        display: flex;
+        width: 8rem;
+        justify-content: space-between;
+        margin-inline: auto;
+      }
+      margin-left: 3rem;
+      .right,
+      .left {
+        @include max-width(1200px) {
+          display: block;
+        }
+        width: 3rem;
+        height: 3rem;
+        margin-right: 2rem;
+      }
+    }
+    .tabs {
+      @include max-width(1200px) {
+        width: 90%;
+      }
+
+      font-family: "Roboto", sans-serif;
+
+      display: flex;
+      margin-left: 3rem;
+      margin-top: 2rem;
+      width: 60%;
+      justify-content: space-between;
+      @include max-width(680px) {
+        margin-left: 1rem;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      div {
+        width: 45%;
+        height: 13rem;
+        border-radius: 2rem;
+        background-color: rgb(245, 210, 245);
+        @include max-width(680px) {
+          height: 9rem;
+        }
+        @include max-width(680px) {
+          margin-bottom: 1rem;
+          width: 13rem;
+        }
+        .tab-head {
+          font-size: 3rem;
+          font-weight: bolder;
+          text-align: center;
+          margin-top: 1rem;
+          color: rgb(152, 41, 152);
+          @include max-width(680px) {
+            font-size: 2rem;
+          }
+        }
+        .des {
+          text-align: center;
+          margin-top: 2rem;
+          font-size: 1.5rem;
+          @include max-width(680px) {
+            font-size: 1.1rem;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .main-img {
+    @include max-width(1200px) {
+      display: none;
+    }
+    width: 45%;
+    height: 50rem;
+    border-radius: 1rem;
+    border: 3px solid rgb(206, 133, 206);
+  }
+}
