@@ -1,3 +1,4 @@
+@import "_base";
 .footer{
     background-color: black;
     margin-top: 3rem;
@@ -5,8 +6,33 @@
     padding-bottom: 5rem;
     .footer-content{
         .up{
+            .info{
+                display: flex;
+                @include max-width(1150px)
+                {
+                    justify-content: center;
+                    align-items: center;
+                   /*  transform: translateX(5rem); */
+                  
+
+                }
+               
+                
+            }
             display: flex;
             justify-content: space-around;
+            @include max-width(1150px)
+                    {
+                        display: block;
+                      
+                    }
+                  .logo{
+                    @include max-width(1150px)
+                {
+                    text-align: center;
+                }
+                  }
+                   
             .company{
                 .ptxt{
                     width: 40%;
@@ -17,11 +43,19 @@
                     font-family: "Roboto", sans-serif;
                     color: rgb(235, 229, 229);
                     margin-top: 1rem;
+                    @include max-width(1150px)
+                    {
+                        display: none;
+                    }
                 }
             }
             .phead{
                 font-weight: bolder;
                 font-size: 1.2rem;
+                @include max-width(690px)
+                {
+                    margin-left: 2rem;
+                }
             }
             .explore{
                 p{
@@ -33,6 +67,10 @@
                 color: white;
                 font-family: "Roboto", sans-serif;
                 color: rgb(235, 229, 229);
+                @include max-width(690px)
+                {
+                    display: none;
+                }
 
             }
             .learn{
@@ -45,9 +83,17 @@
                 color: white;
                 font-family: "Roboto", sans-serif;
                 color: rgb(235, 229, 229);
+                @include max-width(690px)
+                {
+                    display: none;
+                }
   
             }
             .contact{
+                @include max-width(670px)
+                {
+                    margin-left: 7rem;
+                }
                 p{
                     font-size: 1.2rem;
                 }
@@ -87,7 +133,13 @@
                .copyright{
                 display: flex;
                 margin-bottom: 2rem;
+                @include max-width(680px)
+                {
+                    display: block;
+                }
                 p{
+                    font-family: "Roboto", sans-serif;
+
                     font-size: 1.2rem;
                     margin-right: 1rem;
                 }
@@ -95,6 +147,8 @@
                 color: rgb(235, 229, 229);
             }
             .con{
+                font-family: "Roboto", sans-serif;
+
                 margin-bottom: 1.5rem;
                 font-size: 1.2rem;
             }

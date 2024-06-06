@@ -12,7 +12,8 @@ export default function Footer()
                     <p className="ptxt">CleverBooks is an AI-powered supply chain software that provides companies tools for demand forecasting, inventory planning and more. This helps them have the right amount of stock, optimise space and fulfil every order.</p>
 
                     </div>
-                    <div className="explore">
+                   <div className="info">
+                   <div className="explore">
                         <p className="phead">Explore</p>
                         <p>Product</p>
                         <p>Pricing</p>
@@ -51,6 +52,7 @@ export default function Footer()
 </svg></div></a>
                        
                     </div>
+                   </div>
                     </div>
                 </div>
                 <div className="down">

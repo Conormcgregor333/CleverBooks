@@ -910,6 +910,12 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .footer {
   background-color: black;
   margin-top: 3rem;
@@ -924,6 +930,26 @@
   display: flex;
   justify-content: space-around;
 }
+.footer .footer-content .up .info {
+  display: flex;
+}
+@media screen and (max-width: 1150px) {
+  .footer .footer-content .up .info {
+    justify-content: center;
+    align-items: center;
+    /*  transform: translateX(5rem); */
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footer .footer-content .up {
+    display: block;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footer .footer-content .up .logo {
+    text-align: center;
+  }
+}
 .footer .footer-content .up .company .ptxt {
   width: 40%;
   text-align: justify;
@@ -934,9 +960,19 @@
   color: rgb(235, 229, 229);
   margin-top: 1rem;
 }
+@media screen and (max-width: 1150px) {
+  .footer .footer-content .up .company .ptxt {
+    display: none;
+  }
+}
 .footer .footer-content .up .phead {
   font-weight: bolder;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 690px) {
+  .footer .footer-content .up .phead {
+    margin-left: 2rem;
+  }
 }
 .footer .footer-content .up .explore {
   margin-top: 2rem;
@@ -949,6 +985,11 @@
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 690px) {
+  .footer .footer-content .up .explore {
+    display: none;
+  }
+}
 .footer .footer-content .up .learn {
   margin-top: 2rem;
   margin-right: 3rem;
@@ -960,12 +1001,22 @@
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 690px) {
+  .footer .footer-content .up .learn {
+    display: none;
+  }
+}
 .footer .footer-content .up .contact {
   margin-top: 2rem;
   margin-right: 3rem;
   color: white;
   font-family: "Roboto", sans-serif;
   color: rgb(235, 229, 229);
+}
+@media screen and (max-width: 670px) {
+  .footer .footer-content .up .contact {
+    margin-left: 7rem;
+  }
 }
 .footer .footer-content .up .contact p {
   font-size: 1.2rem;
@@ -999,11 +1050,18 @@
   display: flex;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 680px) {
+  .footer .footer-content .down .down-txt .copyright {
+    display: block;
+  }
+}
 .footer .footer-content .down .down-txt .copyright p {
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   margin-right: 1rem;
 }
 .footer .footer-content .down .con {
+  font-family: "Roboto", sans-serif;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
