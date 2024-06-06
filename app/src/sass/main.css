@@ -2,7 +2,7 @@
   /* -----------------------------------Product------------------------------------------------------------------------- */
   /* -----------------------------------------------------------Industries------------------------------------------------------- */
   /* -------------------------------------------------------------------------------------------------------------------------- */
-  height: 50rem;
+  height: 53rem;
   border: 2px solid black;
   background: linear-gradient(to top, rgb(99, 3, 99), black), linear-gradient(to left, rgb(99, 3, 99), black);
   background-blend-mode: overlay;
@@ -72,7 +72,7 @@
   width: 2rem;
 }
 .navouter .product .productnames .productname p {
-  margin-left: 3rem;
+  margin-left: 4.1rem;
   text-align: justify;
   margin-top: 1rem;
   width: 80%;
@@ -95,7 +95,7 @@
 .navouter .industries {
   display: none;
   position: absolute;
-  left: 43rem;
+  left: 45rem;
   width: 20rem;
   height: 30rem;
   background-color: white;
@@ -259,7 +259,7 @@
   display: flex;
   color: white;
   margin-top: 3rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
 }
 @media screen and (max-width: 1380px) {
@@ -287,13 +287,13 @@
 }
 .nav3 .talk {
   cursor: pointer;
-  height: 4rem;
-  width: 10rem;
-  border-radius: 2rem;
+  height: 3.5rem;
+  width: 8rem;
+  border-radius: 1.5rem;
   color: white;
   text-align: center;
   padding-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   background-image: linear-gradient(to left, rgb(243, 90, 90), rgb(103, 103, 241));
 }
@@ -305,12 +305,12 @@
   background-image: linear-gradient(to left, rgb(243, 90, 90), rgb(103, 103, 241));
   -webkit-background-clip: text;
           background-clip: text;
-  margin-top: 1.2rem;
-  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
 }
 .nav3 a {
   color: transparent;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
 }
 .nav3 a:hover {
@@ -476,7 +476,7 @@
 
 .problems .head {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   margin-top: 3rem;
@@ -497,7 +497,7 @@
   }
 }
 .problems .cards .card {
-  height: 19rem;
+  height: 20rem;
   width: 22rem;
   background-color: rgb(247, 228, 247);
   padding-left: 2rem;
@@ -516,7 +516,7 @@
 .problems .cards .card p {
   text-align: justify;
   width: 90%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .keyMetrics {
@@ -706,8 +706,8 @@
   margin-inline: auto;
   text-align: justify;
   font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
-  line-height: 3rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   color: rgb(113, 112, 112);
 }
 @media screen and (max-width: 1200px) {
@@ -729,7 +729,7 @@
 }
 .review .main-txt .profileANDlogo .profile-info {
   display: flex;
-  margin-top: 6rem;
+  margin-top: 4rem;
   /* margin-right: 50%; */
 }
 @media screen and (max-width: 1200px) {
@@ -776,7 +776,8 @@
   }
 }
 .review .main-txt .btns {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
   margin-left: 3rem;
 }
 @media screen and (max-width: 1200px) {
@@ -823,7 +824,7 @@
 }
 .review .main-txt .tabs div {
   width: 45%;
-  height: 13rem;
+  height: 9rem;
   border-radius: 2rem;
   background-color: rgb(245, 210, 245);
 }
@@ -839,7 +840,7 @@
   }
 }
 .review .main-txt .tabs div .tab-head {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   text-align: center;
   margin-top: 1rem;
@@ -852,8 +853,8 @@
 }
 .review .main-txt .tabs div .des {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 @media screen and (max-width: 680px) {
   .review .main-txt .tabs div .des {
@@ -863,7 +864,7 @@
 }
 .review .main-img {
   width: 45%;
-  height: 50rem;
+  height: 43.5rem;
   border-radius: 1rem;
   border: 3px solid rgb(206, 133, 206);
 }
