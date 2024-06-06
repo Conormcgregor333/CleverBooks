@@ -1,0 +1,143 @@
+@import "_base";
+.cta-section{
+    margin-top: 4rem;
+    background-color: black;
+    padding-top: 4rem;
+   
+    height: 50rem;
+    position: relative;
+   @include max-width(430px)
+   {
+    height: 55rem;
+   }
+    .cta{
+        background: linear-gradient(45deg, #8e44ad, #f98ac9);
+        width: 90%;
+        height: 90%;
+       border-radius: 2rem;
+        margin-inline: auto;
+        .cta-head{
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 10%;
+           
+            color: white;
+            font-family: "Roboto", sans-serif;
+
+        }
+        .cta-p{
+            color: white;
+            width: 60%;
+            margin-inline: auto;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            font-family: "Roboto", sans-serif;
+
+
+        }
+        .cta-button{
+            background-color: black;
+            padding: 1.5rem;
+            width: 16rem;
+            height: 4rem;
+            border-radius: 2rem;
+            text-align: center;
+         
+            font-family: "Roboto", sans-serif;
+            color: white;
+            margin-inline: auto;
+            margin-top: 2rem;
+            cursor: pointer;
+           
+            
+        }
+        .cta-button:hover{
+            background-color: white;
+            color: black;
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    }
+    .cta-form{
+        display: none;
+        position: absolute;
+       height: 40rem;
+       width: 25rem;
+       border-radius: 2rem;
+       top:-30%;
+       left: 50%;
+       transform: translate(-50%,50%);
+      background-image: linear-gradient(to bottom,rgb(243, 195, 243),white);
+      font-family: "Roboto", sans-serif;
+      @include max-width(600px)
+      {
+        width: 23rem;
+      }
+      @include max-width(390px)
+      {
+        width: 18rem;
+      }
+        #cut{
+            margin-top: 1rem;
+            text-align: end;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .form-head{
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .txt-below-head{
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .lab{
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            margin-left: 3rem;
+        }
+        .inp{
+            width: 90%;
+            margin-inline: auto;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            input{
+                display: block;
+                margin-inline: auto;
+                height: 2rem;
+            width: 90%;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.3rem;
+            text-align: center;
+            }
+        }
+        .submit{
+            display: block;
+            margin-inline: auto;
+            margin-top: 1rem;
+            background-color: purple;
+            color: white;
+            border: none;
+            height: 3rem;
+            width: 7rem;
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .last{
+            text-align: center;
+            margin-top: 1rem;
+            span{
+                color: rgb(227, 116, 227);
+                cursor: pointer;
+            }
+        }
+    }
+}

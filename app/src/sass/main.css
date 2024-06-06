@@ -582,6 +582,7 @@
   text-align: center;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+  cursor: pointer;
 }
 .keyMetrics .range-btn .p:focus,
 .keyMetrics .range-btn .p:hover {
@@ -918,7 +919,6 @@
 
 .footer {
   background-color: black;
-  margin-top: 3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -1069,5 +1069,149 @@
 .upArrow {
   height: 4rem;
   width: 4rem;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cta-section {
+  margin-top: 4rem;
+  background-color: black;
+  padding-top: 4rem;
+  height: 50rem;
+  position: relative;
+}
+@media screen and (max-width: 430px) {
+  .cta-section {
+    height: 55rem;
+  }
+}
+.cta-section .cta {
+  background: linear-gradient(45deg, #8e44ad, #f98ac9);
+  width: 90%;
+  height: 90%;
+  border-radius: 2rem;
+  margin-inline: auto;
+}
+.cta-section .cta .cta-head {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.cta-section .cta .cta-p {
+  color: white;
+  width: 60%;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+.cta-section .cta .cta-button {
+  background-color: black;
+  padding: 1.5rem;
+  width: 16rem;
+  height: 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-inline: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.cta-section .cta .cta-button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.cta-section .cta-form {
+  display: none;
+  position: absolute;
+  height: 40rem;
+  width: 25rem;
+  border-radius: 2rem;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-image: linear-gradient(to bottom, rgb(243, 195, 243), white);
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .cta-section .cta-form {
+    width: 23rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .cta-section .cta-form {
+    width: 18rem;
+  }
+}
+.cta-section .cta-form #cut {
+  margin-top: 1rem;
+  text-align: end;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.cta-section .cta-form .form-head {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.cta-section .cta-form .txt-below-head {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.cta-section .cta-form .lab {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  margin-left: 3rem;
+}
+.cta-section .cta-form .inp {
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.cta-section .cta-form .inp input {
+  display: block;
+  margin-inline: auto;
+  height: 2rem;
+  width: 90%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  text-align: center;
+}
+.cta-section .cta-form .submit {
+  display: block;
+  margin-inline: auto;
+  margin-top: 1rem;
+  background-color: purple;
+  color: white;
+  border: none;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.cta-section .cta-form .last {
+  text-align: center;
+  margin-top: 1rem;
+}
+.cta-section .cta-form .last span {
+  color: rgb(227, 116, 227);
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

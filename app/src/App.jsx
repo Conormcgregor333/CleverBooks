@@ -6,6 +6,7 @@ import KeyMetrics from "./keyMetrics";
 import Marquee from "./marquee";
 import Review from "./review";
 import Footer from "./footer";
+import CTA from "./cta";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <KeyMetrics />
       <Marquee />
       <Review />
+      <CTA/>
       <Footer/>
     </>
   );
