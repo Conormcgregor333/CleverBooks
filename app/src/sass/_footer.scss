@@ -1,0 +1,103 @@
+.footer{
+    background-color: black;
+    margin-top: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .footer-content{
+        .up{
+            display: flex;
+            justify-content: space-around;
+            .company{
+                .ptxt{
+                    width: 40%;
+                    text-align: justify;
+                    color: white;
+                    font-size: 1.2rem;
+                    line-height: 1.9rem;
+                    font-family: "Roboto", sans-serif;
+                    color: rgb(235, 229, 229);
+                    margin-top: 1rem;
+                }
+            }
+            .phead{
+                font-weight: bolder;
+                font-size: 1.2rem;
+            }
+            .explore{
+                p{
+                    margin-bottom: 1.5rem;
+                    font-size: 1.2rem;
+                }
+                margin-top: 2rem;
+                margin-right: 3rem;
+                color: white;
+                font-family: "Roboto", sans-serif;
+                color: rgb(235, 229, 229);
+
+            }
+            .learn{
+                p{
+                    margin-bottom: 1.5rem;
+                    font-size: 1.2rem;
+                }
+                margin-top: 2rem;
+                margin-right: 3rem;
+                color: white;
+                font-family: "Roboto", sans-serif;
+                color: rgb(235, 229, 229);
+  
+            }
+            .contact{
+                p{
+                    font-size: 1.2rem;
+                }
+                .email{
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+                .corporate-office{
+                    margin-top: 1rem;
+                }
+                margin-top: 2rem;
+                margin-right: 3rem;
+                color: white;
+                font-family: "Roboto", sans-serif;
+                color: rgb(235, 229, 229);
+
+            }
+            .social{
+                display: flex;
+                margin-top: 1rem;
+                .link{
+                    display: block;
+                    color: white;
+                text-decoration: none;
+                margin-inline: 0.5rem;
+                }
+            }
+        }
+
+        width: 90%;
+        margin-inline: auto;
+        .down{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            .down-txt{
+               .copyright{
+                display: flex;
+                margin-bottom: 2rem;
+                p{
+                    font-size: 1.2rem;
+                    margin-right: 1rem;
+                }
+               }
+                color: rgb(235, 229, 229);
+            }
+            .con{
+                margin-bottom: 1.5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

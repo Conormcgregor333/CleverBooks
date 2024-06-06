@@ -1,7 +1,7 @@
 export default function ProblemSolved() {
   return (
     <section className="problems">
-      <p className="head">Four key questions answered by Crest</p>
+      <p className="head">Four key questions answered by CleverBooks</p>
       <div className="cards">
         <div className="card">
           <img
