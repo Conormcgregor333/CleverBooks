@@ -1,0 +1,90 @@
+@import "_base";
+.cars{
+   .car-head{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+    
+   }
+    .car-container{
+        display: flex;
+        .left-arrow{
+            transform: rotateZ(180deg) translateX(-13rem);
+            @include max-width(930px)
+            {
+                transform: rotateZ(180deg) translateX(-9rem);
+
+            }
+            @include max-width(600px)
+            {
+                transform: rotateZ(180deg) translateX(-6rem);
+
+            }
+            @include max-width(490px)
+            {
+                transform: rotateZ(180deg) translateX(-5rem);
+            }
+           
+        }
+        .right-arrow{
+            transform:  translateX(-13rem);
+            @include max-width(930px)
+            {
+                transform: translateX(-9rem);
+
+            }
+            @include max-width(600px)
+            {
+                transform: translateX(-6rem);
+
+            }
+            @include max-width(490px)
+            {
+                transform: translateX(-5rem);
+            }
+           
+        }
+       .car{
+        width: 70%;
+        background-image: linear-gradient(to left,rgb(249, 235, 250),rgb(250, 219, 250));
+        margin-inline: auto;
+        height: 30rem;
+        border-radius: 2rem;
+        font-family: "Roboto", sans-serif;
+        h1{
+            text-align: center;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            @include max-width(490px)
+            {
+                font-size: 1rem;
+            }
+        }
+        p{
+            width: 95%;
+            text-align: center;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            @include max-width(490px)
+            {
+                font-size: 1rem;
+            }
+        }
+        .big-img{
+            width: 23rem;
+            height: 23rem;
+            display: block;
+            margin-inline: auto;
+            @include max-width(670px)
+            {
+                width: 15rem;
+            height: 15rem;
+            margin-top: 4rem;
+            }
+        }
+       }
+    }
+}

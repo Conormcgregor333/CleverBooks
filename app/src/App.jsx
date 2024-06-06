@@ -7,6 +7,7 @@ import Marquee from "./marquee";
 import Review from "./review";
 import Footer from "./footer";
 import CTA from "./cta";
+import Carousel from "./carousel";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <KeyMetrics />
       <Marquee />
       <Review />
+      <Carousel/>
       <CTA/>
       <Footer/>
     </>

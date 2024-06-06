@@ -1254,4 +1254,99 @@
   100% {
     background: linear-gradient(45deg, #8e44ad, #f98ac9);
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cars .car-head {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.cars .car-container {
+  display: flex;
+}
+.cars .car-container .left-arrow {
+  transform: rotateZ(180deg) translateX(-13rem);
+}
+@media screen and (max-width: 930px) {
+  .cars .car-container .left-arrow {
+    transform: rotateZ(180deg) translateX(-9rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  .cars .car-container .left-arrow {
+    transform: rotateZ(180deg) translateX(-6rem);
+  }
+}
+@media screen and (max-width: 490px) {
+  .cars .car-container .left-arrow {
+    transform: rotateZ(180deg) translateX(-5rem);
+  }
+}
+.cars .car-container .right-arrow {
+  transform: translateX(-13rem);
+}
+@media screen and (max-width: 930px) {
+  .cars .car-container .right-arrow {
+    transform: translateX(-9rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  .cars .car-container .right-arrow {
+    transform: translateX(-6rem);
+  }
+}
+@media screen and (max-width: 490px) {
+  .cars .car-container .right-arrow {
+    transform: translateX(-5rem);
+  }
+}
+.cars .car-container .car {
+  width: 70%;
+  background-image: linear-gradient(to left, rgb(249, 235, 250), rgb(250, 219, 250));
+  margin-inline: auto;
+  height: 30rem;
+  border-radius: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.cars .car-container .car h1 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 490px) {
+  .cars .car-container .car h1 {
+    font-size: 1rem;
+  }
+}
+.cars .car-container .car p {
+  width: 95%;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 490px) {
+  .cars .car-container .car p {
+    font-size: 1rem;
+  }
+}
+.cars .car-container .car .big-img {
+  width: 23rem;
+  height: 23rem;
+  display: block;
+  margin-inline: auto;
+}
+@media screen and (max-width: 670px) {
+  .cars .car-container .car .big-img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 4rem;
+  }
 }/*# sourceMappingURL=main.css.map */
