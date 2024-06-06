@@ -1092,6 +1092,10 @@
 }
 .cta-section .cta {
   background: linear-gradient(45deg, #8e44ad, #f98ac9);
+  animation-name: back;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
   width: 90%;
   height: 90%;
   border-radius: 2rem;
@@ -1214,4 +1218,40 @@
 .cta-section .cta-form .last span {
   color: rgb(227, 116, 227);
   cursor: pointer;
+}
+
+@keyframes back {
+  0% {
+    background: linear-gradient(45deg, #8e44ad, #f98ac9);
+  }
+  10% {
+    background: linear-gradient(45deg, #8c3cae, #b56191);
+  }
+  20% {
+    background: linear-gradient(45deg, #8834ac, #bc5b92);
+  }
+  30% {
+    background: linear-gradient(45deg, #9136b9, #ca5b9a);
+  }
+  40% {
+    background: linear-gradient(45deg, #8a2fb1, #be498b);
+  }
+  50% {
+    background: linear-gradient(45deg, #9c36c8, #d6509c);
+  }
+  60% {
+    background: linear-gradient(45deg, #8834ac, #bc5b92);
+  }
+  70% {
+    background: linear-gradient(45deg, #9036b7, #cd5d9c);
+  }
+  80% {
+    background: linear-gradient(45deg, #8e44ad, #f98ac9);
+  }
+  90% {
+    background: linear-gradient(45deg, #8949a4, #e380b8);
+  }
+  100% {
+    background: linear-gradient(45deg, #8e44ad, #f98ac9);
+  }
 }/*# sourceMappingURL=main.css.map */
