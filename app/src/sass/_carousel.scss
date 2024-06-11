@@ -12,7 +12,7 @@
     .car-container{
         display: flex;
         .left-arrow{
-            transform: rotateZ(180deg) translateX(-13rem);
+            transform: rotateZ(180deg) translateX(-15rem);
             @include max-width(930px)
             {
                 transform: rotateZ(180deg) translateX(-9rem);
@@ -30,7 +30,7 @@
            
         }
         .right-arrow{
-            transform:  translateX(-13rem);
+            transform:  translateX(-15rem);
             @include max-width(930px)
             {
                 transform: translateX(-9rem);

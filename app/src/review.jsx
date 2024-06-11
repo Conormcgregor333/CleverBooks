@@ -52,7 +52,7 @@ export default function Review() {
     console.log(index);
   }
   return (
-    <div className="review">
+    <div className="review" id="customer-stories">
       <div className="review-container">
         <div className="main-txt">
           <p className="para">{info[index].para}</p>

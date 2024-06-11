@@ -2,7 +2,7 @@ import Scrollup from "./scrollUP"
 export default function Footer()
 {
     return (
-        <section className="footer">
+        <section className="footer" id="footer">
             <div className="footer-content">
                 <div className="up">
                     <div className="company">
@@ -27,15 +27,15 @@ export default function Footer()
                     </div>
                     <div className="contact">
                     <p className="phead">Contact</p>
-                    <p className="email">sales@getcrest.ai</p>
+                    <p className="email">clever@cleverbooks.ai</p>
                     <p className="office">Registered Office:
                     </p>
-                    <p className="office">1507, Incubex,</p>
-                    <p className="office"> 11th cross road,</p>
+                    <p className="office">1840, Main,</p>
+                    <p className="office"> 6th city road,</p>
                     <p className="office"> 19th Main Road,</p>
                     <p className="office"> Bengaluru, India.</p>
                     <p className="corporate-office">Corporate Office:</p>
-                    <p className="c-office">HSR Layout, Bengaluru,</p>
+                    <p className="c-office">TRS Avenue, Bengaluru,</p>
                     <p className="c-office">India. 560102</p>
                     <div className="social">
                     <a className="link" href="https://twitter.com/Get_Crest" ><div><svg width="20" height="17" viewBox="0 0 20 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -58,12 +58,12 @@ export default function Footer()
                 <div className="down">
                     <div className="down-txt">
                         <div className="copyright">
-                            <p>Copyright 2024 Crest</p>
+                            <p>Copyright 2024 CleverBooks</p>
                             <p>Terms of Service</p>
                             <p>Privacy Policy</p>
                         </div>
-                        <p className="con">Conifer Innovations Private Limited</p>
-                        <p className="con">CIN: U72900KA2022PTC163144</p>
+                        <p className="con">Cleverbooks Innovations Private Limited</p>
+                        <p className="con">CIN: U72900ABDJ5858RNDKDD4</p>
                     </div>
                     <Scrollup/>
                 </div>

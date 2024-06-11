@@ -50,6 +50,34 @@ export default function Navbar() {
       industries.style.display = "none";
     });
   }
+  function pricing()
+  {
+    let showindustries = document.getElementById("ShowPricing");
+    let industries = document.getElementById("pricing");
+    showindustries.addEventListener("mouseenter", () => {
+      industries.style.display = "block";
+    });
+    showindustries.addEventListener("mouseleave", () => {
+      industries.style.display = "none";
+    });
+    industries.addEventListener("mouseenter", () => {
+      industries.style.display = "block";
+    });
+    industries.addEventListener("mouseleave", () => {
+      industries.style.display = "none";
+    });
+  }
+  function login()
+  {
+   /*  let showindustries = document.getElementById("login"); */
+    let login = document.getElementById("loginclever");
+    login.style.display="block";
+    
+  }
+  function crosscut(){
+    let login = document.getElementById("loginclever");
+    login.style.display="none";
+  }
   /* --------------------------------------------------------------------------------------------------------------- */
 
   return (
@@ -68,7 +96,12 @@ export default function Navbar() {
           >
             Product
           </div>
-          <div>Pricing</div>
+          <div 
+           id="ShowPricing"
+           onMouseOver={() => {
+             pricing();
+           }} 
+          >Pricing</div>
           <div
             id="ShowIndustry"
             onMouseOver={() => {
@@ -77,15 +110,16 @@ export default function Navbar() {
           >
             Industry
           </div>
-          <div>Customer Stories</div>
-          <div>About</div>
-          <div>Blog</div>
+         <div> <a className="customer" href="#customer-stories" style={{textDecoration:"none",color:"white"}} alt="">Customer Stories</a></div>
+          <div><a className="customer" href="#footer" style={{textDecoration:"none",color:"white"}} alt="">About</a>
+          </div>
+          
         </div>
         <div className="nav3">
-          <div className="login">
-            <a href="">Login</a>
+          <div className="login" id="login" onClick={()=>{login()}}>
+            Login
           </div>
-          <div className="talk">Talk to us</div>
+          <div className="talk"><a style={{textDecoration:"none",color:"white"}} href="#cta">Talk to us</a></div>
         </div>
         <div
           onClick={() => {
@@ -238,6 +272,64 @@ export default function Navbar() {
           <p>Pharmaceuticals</p>
         </div>
       </div>
+      <div className="pricing" id="pricing" >
+          <div className="price-head">
+           
+              <p className="flexible">Flexible Pricing Plan</p>
+              <p className="satisfy">Pay only when satisfied</p>
+            <img src="https://thumbs.dreamstime.com/b/verified-stamp-round-grunge-sign-label-181774320.jpg" alt="" />
+          </div>
+          <div className="billed">
+            <p>Billed Monthly |</p>
+            <p>Billed Annually |</p>
+            <p className="save">Save upto 20%</p>
+          </div>
+          <div className="prices">
+            <div>
+              <p className="free">Free</p>
+              <p className="dollar">0$<span>/month</span></p>
+              <p className="price-txt">A good plan if you are just starting and learning the technology.</p>
+              <button>Get Started</button>
+              <p className="line"></p>
+              <h4>Whats Included</h4>
+              <p className="points">✅ Basic task and project management</p>
+              <p  className="points">✅ Responsiveness</p>
+              <p  className="points">✅ After services</p>
+            </div>
+            <div>
+              <p className="free">Basic</p>
+              <p className="dollar">10$<span>/month</span></p>
+              <p className="price-txt">Good deal if you are looking for something intermediate and robust.</p>
+              <button>Get Started</button>
+              <p className="line"></p>
+              <h4>Whats Included</h4>
+              <p  className="points">✅ Complete task and project management</p>
+              <p  className="points">✅ Responsiveness</p>
+              <p  className="points">✅ After services</p>
+            </div>
+            <div>
+              <p className="free">Pro</p>
+              <p className="dollar">20$<span>/month</span></p>
+              <p className="price-txt">The best pro deal of the year , provides with the best tech integration.</p>
+              <button>Get Started</button>
+              <p className="line"></p>
+              <h4>Whats Included</h4>
+              <p  className="points">✅ Priority Customer support</p>
+              <p  className="points">✅ Full year management</p>
+              <p  className="points">✅ Exclusive designs</p>
+            </div>
+          </div>
+        </div>
+        <div className="loginclever" id="loginclever">
+          <p id="crosscut" onClick={()=>{crosscut()}}>X</p>
+          <p>Login to awesomeness</p>
+          <label htmlFor="name">Username</label>
+          <input type="text" />
+          <label htmlFor="">Password</label>
+          <input type="password" />
+          <button>Login</button>
+          <p className="newhere">New here ? <span>SignUp</span></p>
+        </div>
       <div className="hero-section">
         <div className="hero">
           <p className="title">

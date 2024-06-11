@@ -1,5 +1,192 @@
 @import "_base";
 .navouter {
+  /* ---------------------------------------login----------------------------------------------------------------- */
+  .loginclever{
+    font-family: "Roboto", sans-serif;
+   /*  display: none; */
+    height: 30rem;
+    width: 25rem;
+    border-radius: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 10rem;
+    left: 35rem;
+    label{
+      display: block;
+      margin-left:2.5rem;
+      margin-top: 1rem;
+      
+
+    }
+input{
+  display:block;
+  width:80%;
+  margin-inline: auto;
+  margin-top: 1rem;
+  height: 2rem;
+  text-align: center;
+  padding: 0.2rem;
+}
+    #crosscut{
+      text-align:end;
+      margin-right: 1rem;
+      margin-top: 1rem;
+      font-size:1.5rem;
+      font-weight: bold;
+      color:black;
+      cursor: pointer;
+    }
+    button{
+      display: block;
+          margin-inline: auto;
+          height:2.5rem;
+          width:80%;
+          border:none;
+          background-color:black;
+          color:white;
+          border-radius:0.2rem;
+          margin-top:2rem;
+          cursor: pointer;
+    }
+    button:hover{
+      background-color: rgb(234, 160, 234);
+    }
+    .newhere{
+      color: black;
+      margin-top: 3rem;
+      span{
+        color: purple;
+        cursor: pointer;
+      }
+    }
+    p{
+      text-align: center;
+      margin-top: 3rem;
+      color: black;
+      font-weight: bold;
+    }
+  }
+  /* ---------------------------------------pricing------------------------------------------------------------- */
+  .pricing{
+    font-family: "Roboto", sans-serif;
+    display:none;
+    height: 35rem;
+    width: 100%;
+    top: 6rem;
+    left: 0;
+    position: absolute;
+    z-index: 100000000000;
+    background-color: white;
+    .billed{
+      display: flex;
+      justify-content:flex-end;
+      p{
+        margin-inline: 0.5rem;
+        color: purple;
+
+      }
+      .save{
+        width: 7rem;
+        background-color: rgb(247, 211, 247);
+        height: 1.5rem;
+        border-radius: 0.75rem;
+        padding-top:0.15rem;
+        text-align: center;
+        margin-right: 2rem;
+        color: purple;
+        font-weight: bold;
+      }
+    }
+    .price-head{
+       p{
+        text-align: center;
+       }
+       .flexible
+       {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+       }
+       .satisfy{
+        color: rgb(190, 186, 186);
+       }
+      img{
+        position: absolute;
+        transform: rotateZ(-20deg);
+        top: 1rem;
+        left: 4rem;
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+    .prices{
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap:wrap;
+      div{
+        width: 25%;
+        height: 25rem;
+        border:2px solid black;
+        border-radius:1rem;
+        .free{
+          margin-inline: 1rem;
+          margin-top: 1rem;
+        }
+        .dollar{
+          margin-inline: 1rem;
+          margin-top: 1rem;
+          font-size: 1.8rem;
+          font-weight: bolder;
+          span{
+            font-size: 0.8rem;
+            font-weight: 100;
+          }
+        }
+        .price-txt{
+          margin-inline: 1rem;
+          margin-top: 1rem;
+          text-align: justify;
+          color: rgb(159, 156, 156);
+        }
+        button{
+          display: block;
+          margin-inline: auto;
+          height:2.5rem;
+          width:70%;
+          border:none;
+          background-color:black;
+          color:white;
+          border-radius:0.2rem;
+          margin-top:1rem;
+          cursor: pointer;
+        }
+        .line{
+          width: 80%;
+          margin-inline: auto;
+          height: 0.1rem;
+          background-color: black;
+          margin-top:2rem;
+        }
+        h4{
+          text-align: center;
+          margin-top: 1rem;
+        }
+        .points{
+          margin-left: 1rem;
+          margin-top: 1rem;
+        }
+      }
+      div:hover{
+        border:2px solid rgb(234, 156, 234);
+        transform: scale(1.05);
+        transition: 0.3s;
+        button{
+          background-color:rgb(234, 156, 234) ;
+        }
+      }
+    }
+  }
   /* -----------------------------------Product------------------------------------------------------------------------- */
   .product {
     display: none;
@@ -9,8 +196,9 @@
     width: 100%;
     height: 27rem;
     position: absolute;
-    top: 6.5rem;
+    top: 6rem;
     left: 0;
+    z-index: 100000000000;
     background-color: white;
 
     .producthead {
@@ -89,8 +277,10 @@
   /* -----------------------------------------------------------Industries------------------------------------------------------- */
   .industries {
     display: none;
-    position: absolute;
-    left: 45rem;
+    position: fixed;
+    top:6rem;
+    z-index: 10000000000;
+    left: 35rem;
     width: 20rem;
     height: 30rem;
     background-color: white;
@@ -145,11 +335,12 @@
     div {
       margin-top: 1rem;
     }
-    .log {
+    .login {
       text-decoration: none;
       color: rgb(251, 85, 251);
       cursor: pointer;
     }
+   
     .talkTo {
       height: 4rem;
       width: 10rem;
@@ -262,11 +453,18 @@
   div {
     margin-inline: 2rem;
     cursor: pointer;
+    .customer:hover{
+      color: orange;
+     }
+    
   }
-
+  
+  
   div:hover {
     color: orange;
+   
   }
+
   color: white;
   margin-top: 3rem;
   font-size: 1.1rem;
@@ -300,16 +498,23 @@
     transition: 0.3s;
   }
   .login {
-    background-image: linear-gradient(
+   /*  background-image: linear-gradient(
       to left,
       rgb(243, 90, 90),
       rgb(103, 103, 241)
     );
-    background-clip: text;
+    background-clip: text; */
+    color: white;
     margin-top: 1rem;
     margin-right: 2rem;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
   }
-  a {
+  .login:hover{
+    color: orange;
+  }
+  /* a {
     color: transparent;
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
@@ -317,7 +522,7 @@
   a:hover {
     color: white;
     text-decoration: none;
-  }
+  } */
 }
 .hero-section {
   display: flex;

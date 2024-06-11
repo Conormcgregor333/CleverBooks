@@ -34,7 +34,7 @@ export default function Carousel()
                  <img className="big-img" src={infoArray[curr].img} alt="" />
                  <div>
                      <h1>{infoArray[curr].head}</h1>
-                     <p>{infoArray[curr].p}</p>
+                    {/*  <p>{infoArray[curr].p}</p> */}
                  </div>
              </div>
              

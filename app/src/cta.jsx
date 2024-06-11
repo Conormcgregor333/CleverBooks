@@ -12,7 +12,7 @@ export default function CTA()
 
     }
     return (
-       <section className="cta-section">
+       <section className="cta-section" id="cta">
          <div className="cta">
             <p className="cta-head">You can grow faster than you think!</p>
             <p className="cta-p">Plan with Crest to fulfil your demand today, and dreams tomorrow. We bring the methods and technologies of large global companies to help brands of all sizes scale.</p>

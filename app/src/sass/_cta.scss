@@ -13,7 +13,7 @@
     .cta{
         background: linear-gradient(45deg, #8e44ad, #f98ac9);
         animation-name: back;
-        animation-duration: 5s;
+        animation-duration: 3s;
         animation-iteration-count: infinite;
         transition-timing-function: ease-in-out;
         width: 90%;
@@ -150,36 +150,66 @@
         background: linear-gradient(45deg, #8e44ad, #f98ac9);
 
     }
+    5%{
+        background: linear-gradient(45deg, #9b4abd, #f18ac4);
+    }
     10%{
-        background: linear-gradient(45deg, #8c3cae, #b56191);
+        background: linear-gradient(45deg, #a553c8, #dd7eb4);
     }
-    20%{
-        background: linear-gradient(45deg, #8834ac, #bc5b92);
+   15%{
+    background: linear-gradient(45deg, #aa59cd, #df84b7);
+   }
+   20%{
+    background: linear-gradient(45deg, #aa5ccc, #df84b8);
+   }
+   25%{
+    background: linear-gradient(45deg, #ad60ce, #de87b8);
+   }
+   30%{
+    background: linear-gradient(45deg, #af65cf, #e08dbc);
+   }
+   35%{
+    background: linear-gradient(45deg, #b76cd7, #e590c0);
+   }
+   40%{
+    background: linear-gradient(45deg, #b971d8, #e492c1);
+   }
+   45%{
+    background: linear-gradient(45deg, #bd78db, #e297c2);
+   }
+   50%{
+    background: linear-gradient(45deg, #bd78db, #e297c2);
+   }
+   55%{
+    background: linear-gradient(45deg, #b971d8, #e492c1);
+   }
+   60%{
+    background: linear-gradient(45deg, #b76cd7, #e590c0);
+   }
+   65%{
+    background: linear-gradient(45deg, #af65cf, #e08dbc);
+   }
+   70%{
+    background: linear-gradient(45deg, #ad60ce, #de87b8);
 
-    }
-    30%{
-        background: linear-gradient(45deg, #9136b9, #ca5b9a);
-    }
-    40%{
-        background: linear-gradient(45deg, #8a2fb1, #be498b);
-    }
-    50%{
-        background: linear-gradient(45deg, #9c36c8, #d6509c);
-    }
-    60%{
-        background: linear-gradient(45deg, #8834ac, #bc5b92);
-    }
-    70%{
-        background: linear-gradient(45deg, #9036b7, #cd5d9c);
-    }
-    80%{
-        background: linear-gradient(45deg, #8e44ad, #f98ac9);
-    }
-    90%{
-        background: linear-gradient(45deg, #8949a4, #e380b8);
-    }
-    100%{
-        background: linear-gradient(45deg, #8e44ad, #f98ac9);
-    }
+   }
+   75%{
+    background: linear-gradient(45deg, #aa5ccc, #df84b8);
+   }
+   80%{
+    background: linear-gradient(45deg, #aa59cd, #df84b7);
+   }
+   85%{
+    background: linear-gradient(45deg, #a553c8, #dd7eb4);
+   }
+   90%{
+    background: linear-gradient(45deg, #9b4abd, #f18ac4);
+   }
+   95%{
+    background: linear-gradient(45deg, #9b4abd, #f18ac4);
+   }
+   100%{
+    background: linear-gradient(45deg, #8e44ad, #f98ac9);
+   }
     
 }
