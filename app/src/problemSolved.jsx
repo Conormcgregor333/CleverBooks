@@ -48,6 +48,27 @@ export default function ProblemSolved() {
             you'll always have products available across cities.
           </p>
         </div>
+        <div className="card">
+          <img
+            src="https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/651d0cb76f758e3b86ff173b_Group%202649.svg"
+            alt=""
+          />
+          <h2>Why choose us</h2>
+          <p>
+            We provide the best, most reliable and future proof tech integration. Our services go along till end.
+          </p>
+        </div>
+        <div className="card">
+          <img
+            src="https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/651d0cd33aa58280f16bebe5_dfsa.svg"
+            alt=""
+          />
+          <h2>Best at it</h2>
+          <p>
+            Our tool suggests how to move stock within your supply chain. So
+            you'll always have products available across cities.
+          </p>
+        </div>
       </div>
     </section>
   );
