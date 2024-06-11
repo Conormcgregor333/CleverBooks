@@ -104,11 +104,12 @@
   background-color: rgb(247, 211, 247);
   height: 1.5rem;
   border-radius: 0.75rem;
-  padding-top: 0.15rem;
+  padding-top: 0.25rem;
   text-align: center;
   margin-right: 2rem;
   color: purple;
   font-weight: bold;
+  font-size: 0.8rem;
 }
 .navouter .pricing .price-head p {
   text-align: center;

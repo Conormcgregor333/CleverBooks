@@ -346,7 +346,7 @@ export default function Navbar() {
               <p>Get started with CleverBooks</p>
               <div className="inner">
                 <div className="txt-cont">
-                  <p className="txt">Get started with CleverBooks</p>
+                  <p className="txt"><a href="#cta" style={{textDecoration:"none", color:"purple"}}>Get started with CleverBooks</a></p>
                 </div>
               </div>
             </div>
