@@ -8,9 +8,11 @@ import Review from "./review";
 import Footer from "./footer";
 import CTA from "./cta";
 import Carousel from "./carousel";
+import ScrollIndicator from "./scrollIndicator";
 function App() {
   return (
     <>
+    <ScrollIndicator/>
       <Navbar />
       <ProblemSolved />
       <KeyMetrics />
