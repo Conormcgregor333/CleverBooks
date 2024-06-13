@@ -63,7 +63,7 @@ export default function Footer()
                             <p>Privacy Policy</p>
                         </div>
                         <p className="con">Cleverbooks Innovations Private Limited</p>
-                        <p className="con">CIN: U72900ABDJ5858RNDKDD4</p>
+                        <p className="con">Developer : <a className="developer" href="https://www.linkedin.com/in/siddharth-pareek-75514b190/" target="_blank" style={{color:"white"}}>Connect with me</a></p>
                     </div>
                     <Scrollup/>
                 </div>

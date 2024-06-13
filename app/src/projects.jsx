@@ -1,8 +1,11 @@
+import { useRef } from "react"
 export default function Projects()
 {
+    let ref=useRef(null)
+    
     return (
         <>
-        <p className="designs">Designs so unique</p>
+        <p ref={ref} className="designs">Designs so unique</p>
         <div className="project-container">
             <div className="project">
                 <img className="project-img1" src="https://cdn.dribbble.com/users/436749/screenshots/3464367/attachments/762188/whyus-dribble.png" alt="" />
