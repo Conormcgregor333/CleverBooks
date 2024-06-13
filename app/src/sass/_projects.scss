@@ -1,0 +1,86 @@
+@import "_base";
+.designs{
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    margin-top: 3rem;
+    
+
+
+}
+.project-container{
+    background-color: rgb(244, 233, 244);
+    border-radius: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+   width: 70%;
+   margin-inline: auto;
+    flex-wrap: wrap;
+   
+   @include min-width(1080px)
+   {
+    padding-bottom: 8rem;
+   }
+    .project{
+        width: 12rem;
+        height:22rem;
+        border-radius: 2rem;
+        position: relative;
+        @include min-width(530px)
+        {
+            width: 15rem;
+            height:25rem;
+            border-radius: 2rem;
+        }
+        .project-description{
+            transform: translateY(8rem);
+            font-family: "Roboto", sans-serif;
+            font-size: 0.8rem;
+            font-weight:bold;
+            text-align: justify;
+            display: none;
+            @include min-width(1080px)
+            {
+             display: block;
+            }
+            
+        }
+        .project-img1,.project-img2, .project-img3{
+            display:block;
+max-width:100%;
+height:auto;
+border-radius: 2rem;
+
+        }
+        .project-img1{
+            transform: rotateZ(-10deg);
+        }
+        .project-img2{
+            transform: rotateZ(10deg) translateY(3rem);
+        }
+        .num1,.num2,.num3{
+            position:absolute;
+            top:5rem;
+            font-size: 15rem;
+           
+            z-index: 100000;
+            @include min-width(530px)
+            {
+                font-size: 20rem;
+            }
+        }
+        .num1{
+            transform: rotateZ(-10deg);
+        }
+        .num2{
+            transform: rotateZ(10deg) ;
+            @include min-width(530px)
+            {
+                transform: rotateZ(10deg) translateY(3rem);
+            }
+            
+        }
+    }
+}

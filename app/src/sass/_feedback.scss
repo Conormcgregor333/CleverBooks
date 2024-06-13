@@ -1,0 +1,184 @@
+@import "_base";
+.aftersbmt{
+    font-family: "Roboto", sans-serif;
+    h3{
+        text-align: center;
+        margin-top: 3rem;
+    }
+    p{
+        text-align: center;
+        cursor: pointer;
+    }
+    p:hover{
+        color: rgb(238, 168, 238);
+    }
+}
+.feedback-container
+{
+    font-family: "Roboto", sans-serif;
+
+    margin-top: 3rem;
+    p{
+        font-size: 0.8rem;
+        font-weight:bold;
+        margin-left: 10%;
+        margin-top: 1rem;
+    }
+    width: 70%;
+    height: 29rem;
+    border:2px solid rgb(254, 197, 254);
+    border-radius: 0.5rem;
+    margin-inline:auto;
+    @include min-width(640px)
+    {
+        width: 40%;   
+        height: 27rem;
+    }
+    @include min-width(768px)
+    {
+        width: 40%;  
+        height: 26rem;
+    }
+    @include min-width(1024px)
+    {
+        width: 30%;  
+        height: 25rem;
+    }
+    @include min-width(1280px)
+    {
+        width: 30%;  
+        height: 25rem;
+    }
+    @include min-width(1536px)
+    {
+        width: 30%;  
+        height: 25rem;
+    }
+    textarea{
+        width: 80%;
+        height: 40%;
+        display: block;
+        margin-inline:auto;
+        margin-top: 1rem;
+        padding: 0.2rem;
+        border:2px solid rgb(254, 197, 254);
+        border-radius: 1rem;
+    }
+  
+    .star-container{
+        width: 50%;
+        margin-inline:auto;
+        display: flex;
+        justify-content: space-between;
+        .star{
+            font-size: 1.5rem;
+           
+        }
+    }
+    .feedback-btn{
+        width: 40%;
+        height: 3rem;
+        display:block;
+        margin-inline:auto;
+        /* margin-top: 2rem; */
+        border-radius: 0.5rem;
+        border:none;
+        background-color: black;
+        color:white;
+        font-weight: bold;
+        font-size: 0.5rem;
+        margin-top: 1rem;
+        @include min-width(640px)
+        {
+           
+                width: 40%;
+                height: 3rem;
+                display:block;
+                margin-inline:auto;
+                /* margin-top: 2rem; */
+                border-radius: 0.5rem;
+                border:none;
+                background-color: black;
+                color:white;
+                font-weight: bold;
+                font-size: 1rem;
+               
+                
+            
+        }
+        @include min-width(768px)
+        {
+           
+                width: 40%;
+                height: 3rem;
+                display:block;
+                margin-inline:auto;
+                /* margin-top: 2rem; */
+                border-radius: 0.5rem;
+                border:none;
+                background-color: black;
+                color:white;
+                font-weight: bold;
+                font-size: 1rem;
+            
+        }
+        @include min-width(1024px)
+        {
+          
+                width: 40%;
+                height: 3rem;
+                display:block;
+                margin-inline:auto;
+                /* margin-top: 2rem; */
+                border-radius: 0.5rem;
+                border:none;
+                background-color: black;
+                color:white;
+                font-weight: bold;
+                font-size: 1rem;
+                
+            
+        }
+        @include min-width(1280px)
+        {
+           
+                width: 40%;
+                height: 3rem;
+                display:block;
+                margin-inline:auto;
+                /* margin-top: 2rem; */
+                border-radius: 0.5rem;
+                border:none;
+                background-color: black;
+                color:white;
+                font-weight: bold;
+                font-size: 1rem;
+                
+            
+        }
+        @include min-width(1536px)
+        {
+           
+                width: 40%;
+                height: 3rem;
+                display:block;
+                margin-inline:auto;
+                /* margin-top: 2rem; */
+                border-radius: 0.5rem;
+                border:none;
+                background-color: black;
+                color:white;
+                font-weight: bold;
+                font-size: 1rem;
+                
+            
+        }
+
+    }
+    .feedback-btn:hover{
+        background-color: rgb(241, 211, 241);
+        color:black;
+        transform: scale(0.9);
+        transition:0.3s;
+    }
+}

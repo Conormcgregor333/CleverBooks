@@ -100,9 +100,7 @@ export default function KeyMetrics() {
             className="p"
             onClick={() => {
               txt1();
-            }} onMouseOver={() => {
-              txt1();
-            }}
+            }} 
           >
             Stock Outs
           </p>
@@ -110,17 +108,13 @@ export default function KeyMetrics() {
             className="p"
             onClick={() => {
               txt2();
-            }} onMouseOver={() => {
-              txt2();
-            }}
+            }} 
           >
             Cash Recovery Cycle
           </p>
           <p
             className="p"
             onClick={() => {
-              txt3();
-            }}onMouseOver={() => {
               txt3();
             }}
           >

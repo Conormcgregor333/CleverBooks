@@ -19,7 +19,7 @@
 }
 .navouter .loginclever {
   font-family: "Roboto", sans-serif;
-  /*  display: none; */
+  display: none;
   height: 30rem;
   width: 25rem;
   border-radius: 1rem;
@@ -1583,4 +1583,280 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.indicator {
+  height: 0.6rem;
+  background-color: rgb(255, 169, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aftersbmt {
+  font-family: "Roboto", sans-serif;
+}
+.aftersbmt h3 {
+  text-align: center;
+  margin-top: 3rem;
+}
+.aftersbmt p {
+  text-align: center;
+  cursor: pointer;
+}
+.aftersbmt p:hover {
+  color: rgb(238, 168, 238);
+}
+
+.feedback-container {
+  font-family: "Roboto", sans-serif;
+  margin-top: 3rem;
+  width: 70%;
+  height: 29rem;
+  border: 2px solid rgb(254, 197, 254);
+  border-radius: 0.5rem;
+  margin-inline: auto;
+}
+.feedback-container p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 640px) {
+  .feedback-container {
+    width: 40%;
+    height: 27rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feedback-container {
+    width: 40%;
+    height: 26rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .feedback-container {
+    width: 30%;
+    height: 25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .feedback-container {
+    width: 30%;
+    height: 25rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .feedback-container {
+    width: 30%;
+    height: 25rem;
+  }
+}
+.feedback-container textarea {
+  width: 80%;
+  height: 40%;
+  display: block;
+  margin-inline: auto;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  border: 2px solid rgb(254, 197, 254);
+  border-radius: 1rem;
+}
+.feedback-container .star-container {
+  width: 50%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.feedback-container .star-container .star {
+  font-size: 1.5rem;
+}
+.feedback-container .feedback-btn {
+  width: 40%;
+  height: 3rem;
+  display: block;
+  margin-inline: auto;
+  /* margin-top: 2rem; */
+  border-radius: 0.5rem;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 0.5rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 640px) {
+  .feedback-container .feedback-btn {
+    width: 40%;
+    height: 3rem;
+    display: block;
+    margin-inline: auto;
+    /* margin-top: 2rem; */
+    border-radius: 0.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feedback-container .feedback-btn {
+    width: 40%;
+    height: 3rem;
+    display: block;
+    margin-inline: auto;
+    /* margin-top: 2rem; */
+    border-radius: 0.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .feedback-container .feedback-btn {
+    width: 40%;
+    height: 3rem;
+    display: block;
+    margin-inline: auto;
+    /* margin-top: 2rem; */
+    border-radius: 0.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .feedback-container .feedback-btn {
+    width: 40%;
+    height: 3rem;
+    display: block;
+    margin-inline: auto;
+    /* margin-top: 2rem; */
+    border-radius: 0.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .feedback-container .feedback-btn {
+    width: 40%;
+    height: 3rem;
+    display: block;
+    margin-inline: auto;
+    /* margin-top: 2rem; */
+    border-radius: 0.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+.feedback-container .feedback-btn:hover {
+  background-color: rgb(241, 211, 241);
+  color: black;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.designs {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  margin-top: 3rem;
+}
+
+.project-container {
+  background-color: rgb(244, 233, 244);
+  border-radius: 1rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1080px) {
+  .project-container {
+    padding-bottom: 8rem;
+  }
+}
+.project-container .project {
+  width: 12rem;
+  height: 22rem;
+  border-radius: 2rem;
+  position: relative;
+}
+@media screen and (min-width: 530px) {
+  .project-container .project {
+    width: 15rem;
+    height: 25rem;
+    border-radius: 2rem;
+  }
+}
+.project-container .project .project-description {
+  transform: translateY(8rem);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: justify;
+  display: none;
+}
+@media screen and (min-width: 1080px) {
+  .project-container .project .project-description {
+    display: block;
+  }
+}
+.project-container .project .project-img1, .project-container .project .project-img2, .project-container .project .project-img3 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+.project-container .project .project-img1 {
+  transform: rotateZ(-10deg);
+}
+.project-container .project .project-img2 {
+  transform: rotateZ(10deg) translateY(3rem);
+}
+.project-container .project .num1, .project-container .project .num2, .project-container .project .num3 {
+  position: absolute;
+  top: 5rem;
+  font-size: 15rem;
+  z-index: 100000;
+}
+@media screen and (min-width: 530px) {
+  .project-container .project .num1, .project-container .project .num2, .project-container .project .num3 {
+    font-size: 20rem;
+  }
+}
+.project-container .project .num1 {
+  transform: rotateZ(-10deg);
+}
+.project-container .project .num2 {
+  transform: rotateZ(10deg);
+}
+@media screen and (min-width: 530px) {
+  .project-container .project .num2 {
+    transform: rotateZ(10deg) translateY(3rem);
+  }
 }/*# sourceMappingURL=main.css.map */
