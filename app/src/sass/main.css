@@ -542,19 +542,24 @@
     width: 80%;
   }
 }
+@media screen and (max-width: 600px) and (max-width: 400px) {
+  .hero-section .hero-img {
+    width: 75%;
+  }
+}
 
 .hero .title {
   color: white;
-  font-size: 5rem;
+  font-size: 4.2rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-style: normal;
   background-image: linear-gradient(to left, rgb(243, 90, 90), rgb(103, 103, 241));
   -webkit-background-clip: text;
           background-clip: text;
-  width: 60%;
+  width: 55%;
   margin-top: 2rem;
-  margin-left: 4.5rem;
+  margin-left: 4.2rem;
 }
 .hero .title span {
   color: transparent;

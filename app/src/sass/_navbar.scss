@@ -541,13 +541,17 @@ input{
     .hero-img {
       height: 20rem;
       width: 80%;
+      @include max-width(400px)
+      {
+        width: 75%;
+      }
     }
   }
 }
 .hero {
   .title {
     color: white;
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -557,9 +561,9 @@ input{
       rgb(103, 103, 241)
     );
     background-clip: text;
-    width: 60%;
+    width: 55%;
     margin-top: 2rem;
-    margin-left: 4.5rem;
+    margin-left: 4.2rem;
     span {
       color: transparent;
     }
