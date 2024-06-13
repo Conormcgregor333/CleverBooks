@@ -8,6 +8,7 @@
     margin-top: 3rem;
   }
   .cards {
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -40,6 +41,12 @@
         width: 90%;
         font-size: 1.2rem;
       }
+    }
+    .card:hover{
+      box-shadow: 0 0 20px rgb(247, 228, 247);
+      background-color: white;
+     /*  border: 2px solid rgb(247, 228, 247); */
+      transition: 0.3s;
     }
   }
 }

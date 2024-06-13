@@ -479,6 +479,7 @@ input{
   margin-top: 2rem;
   justify-content: space-between;
   .talk {
+    font-weight: bold;
     cursor: pointer;
     height: 3.5rem;
     width: 8rem;
@@ -494,6 +495,7 @@ input{
       rgb(103, 103, 241)
     );
   }
+ 
   .talk:hover {
     transform: scale(0.9);
     transition: 0.3s;

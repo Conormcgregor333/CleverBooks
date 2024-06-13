@@ -119,7 +119,7 @@ export default function Navbar() {
           <div className="login" id="login" onClick={()=>{login()}}>
             Login
           </div>
-          <div className="talk"><a style={{textDecoration:"none",color:"white"}} href="#cta">Talk to us</a></div>
+          <div className="talk"><a style={{textDecoration:"none",color:"white"}} href="#cta">START</a></div>
         </div>
         <div
           onClick={() => {

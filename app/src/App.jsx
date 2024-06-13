@@ -11,6 +11,7 @@ import Carousel from "./carousel";
 import ScrollIndicator from "./scrollIndicator";
 import Feedback from "./feedback";
 import Projects from "./projects";
+import Team from "./ourteam";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
       <Review />
       <Carousel/>
       <Feedback/>
+      <Team/>
       <CTA/>
       <Footer/>
     </>

@@ -489,6 +489,7 @@
   }
 }
 .nav3 .talk {
+  font-weight: bold;
   cursor: pointer;
   height: 3.5rem;
   width: 8rem;
@@ -698,6 +699,7 @@
   margin-top: 3rem;
 }
 .problems .cards {
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -733,6 +735,12 @@
   text-align: justify;
   width: 90%;
   font-size: 1.2rem;
+}
+.problems .cards .card:hover {
+  box-shadow: 0 0 20px rgb(247, 228, 247);
+  background-color: white;
+  /*  border: 2px solid rgb(247, 228, 247); */
+  transition: 0.3s;
 }
 
 * {
@@ -1277,7 +1285,7 @@
 }
 
 .cta-section {
-  margin-top: 4rem;
+  /*  margin-top: 4rem; */
   background-color: black;
   padding-top: 4rem;
   height: 50rem;
@@ -1859,4 +1867,130 @@
   .project-container .project .num2 {
     transform: rotateZ(10deg) translateY(3rem);
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.team-section {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  padding-top: 6rem;
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+}
+.team-section .team-head {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.team-section .team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: auto;
+  width: 60%;
+}
+@media screen and (min-width: 990px) {
+  .team-section .team-container {
+    flex-wrap: nowrap;
+    margin-inline: auto;
+  }
+}
+.team-section .team-container .team-member {
+  width: 15rem;
+  height: 15rem;
+  background-image: linear-gradient(to top, rgb(88, 208, 255), rgb(232, 115, 255));
+  border-radius: 5%;
+  position: relative;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-inline: 0.5rem;
+}
+@media screen and (max-width: 380px) {
+  .team-section .team-container .team-member {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .team-section .team-container .team-member {
+    width: 13rem;
+    height: 30rem;
+    border-radius: 2%;
+    margin-top: 0;
+    margin-inline: 0;
+  }
+}
+.team-section .team-container .team-member .team-img {
+  width: 98%;
+  display: block;
+  height: 98%;
+  margin-inline: auto;
+  margin-top: 0.2rem;
+  filter: brightness(0.5);
+  filter: grayscale(100%);
+  cursor: pointer;
+  border-radius: 5%;
+}
+@media screen and (min-width: 990px) {
+  .team-section .team-container .team-member .team-img {
+    width: 99%;
+    display: block;
+    height: 100%;
+    margin-inline: auto;
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
+.team-section .team-container .team-member .team-img:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+  filter: grayscale(0);
+  transition: 0.3s;
+}
+.team-section .team-container .team-member .team-description {
+  display: none;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  z-index: 1000000000000;
+}
+@media screen and (max-width: 380px) {
+  .team-section .team-container .team-member .team-description {
+    top: 15%;
+  }
+}
+@media screen and (min-width: 990px) {
+  .team-section .team-container .team-member .team-description {
+    top: 75%;
+  }
+}
+.team-section .team-container .team-member .team-description p {
+  color: white;
+  margin-top: 0.2rem;
+}
+.team-section .team-container .team-member .team-description .team-name {
+  font-weight: bold;
+}
+.team-section .team-container .team-member .team-description button {
+  cursor: pointer;
+  width: 7rem;
+  height: 1.7rem;
+  margin-top: 0.5rem;
+  background-image: linear-gradient(to left, rgb(88, 208, 255), rgb(232, 115, 255));
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 0 1rem;
+}
+.team-section .team-container .team-member:hover .team-description {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
